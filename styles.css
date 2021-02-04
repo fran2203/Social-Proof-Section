@@ -1,0 +1,129 @@
+:root {
+    --very-magenta: rgb(80, 32, 80);
+    --pink: rgb(238, 104, 164);
+    --dark-magenta: rgb(147, 123, 146);
+    --light-magenta: rgb(247, 242, 247);
+    --white: rgb(255, 255, 255);
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.main {
+    padding: 3.5vw;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.heading {
+    width: 40%;
+}
+
+.heading__title {
+    font-size: 3em;
+    margin-top: 0;
+    color: var(--very-magenta);
+}
+
+.heading__paragraph {
+    color: var(--dark-magenta);
+}
+
+.stars {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.stars__item {
+    position: relative;
+    width: 30vw;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: var(--light-magenta);
+}
+
+.stars__item:first-child {
+    right: 100px;
+}
+
+.stars__item:nth-child(2) {
+    right: 50px;
+}
+
+.stars__info {
+    font-size: 1em;
+    margin: 0;
+    margin-right: auto;
+    color: var(--very-magenta);
+}
+
+.stars__container {
+    margin-right: 20px;
+}
+
+.cards {
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.cards__item{
+    position: relative;
+    background-color: var(--very-magenta);
+    border-radius: 10px;
+    padding: 30px;
+    color: var(--white);
+}
+
+.cards__item:nth-child(2) {
+    top: 1em;
+}
+
+.cards__item:last-child {
+    top: 2em;
+}
+
+.cards__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cards__image {
+    border-radius: 50%;
+    width: 40px;
+    height: 100%;
+}
+
+.cards__info {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards__name{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1em;    
+}
+
+.cards__verified{
+    color: var(--pink);
+    margin-top: 0;
+    margin-bottom: 0;
+}
